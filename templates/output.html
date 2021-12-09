@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h4>Thank you for selecting your activity types {{name}}! Below are randomly generated activities based on your preferences</h4>
+    {% for activity in activitylist %}
+    <p>{{activity}}</p>
+    {% endfor %}
+    <br />
+    <br />
+    <h4>Let's generate a playlist you can listen to while doing your activity(ies)!</h4>
+    <form action = "/getvideos" method = "get">
+        <label for = "playlist"> Enter an artist or genre of music: </label>
+        <input type = "text" id = "playlist" name = "playlist"/><br />
+        <input type = "submit" value = "Submit!" name ="submit" id = "submit"/><br />
+    </form>>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist</title>
+</head>
+
+<body>
+<h3>Listen to your playlist below!</h3>
+<br />
+
+    {% for playlist in lists %}
+    <iframe width="355" height="200" src={{playlist}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    {% endfor %}
+</body>
+</html>
